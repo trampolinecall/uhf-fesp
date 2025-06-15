@@ -1,0 +1,27 @@
+name:                uhf-fesp
+version:             0.0.0.0
+
+dependencies:
+  - base >= 4.7 && < 5
+
+ghc-options:
+  - -Wall
+  - -Wextra
+  - -Wno-name-shadowing
+  - -Werror=incomplete-patterns
+  - -Werror=incomplete-uni-patterns
+  - -Werror=missing-fields
+  - -Werror=missing-methods
+
+default-extensions:
+  - LambdaCase
+  - DeriveGeneric
+  - TupleSections
+  - OverloadedStrings
+  - TypeFamilies
+  - FlexibleContexts
+
+executables:
+  uhf-fesp:
+    source-dirs:      src
+    main:             Main.hs
