@@ -3,6 +3,12 @@ version:             0.0.0.0
 
 dependencies:
   - base >= 4.7 && < 5
+  - array
+  - containers
+  - mtl
+  - transformers
+  - template-haskell
+  - safe
 
 ghc-options:
   - -Wall
@@ -20,6 +26,9 @@ default-extensions:
   - OverloadedStrings
   - TypeFamilies
   - FlexibleContexts
+
+build-tools:
+  - alex
 
 executables:
   uhf-fesp:
